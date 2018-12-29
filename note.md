@@ -24,7 +24,7 @@ HTMl标题（heading）
 
 ### <hr>标签
 创建水平线，可用于分割页面中的内容
-
+<herf:"superlink.html>
 <!-- //-->注释
 
 <p align="center">居中显示 </p>属性一般添加在开始标签
@@ -48,7 +48,7 @@ HTMl标题（heading）
 border="" 单位为像素，产生边框，默认无边框
 ** 空标签 即没有</> ,所以最好在开始标签加/
 
-### <a>
+### <audio>
 <a herf="https://url" target="_blank">文本名称</a>  
 target确认打开方式；"_blank"：新窗口或选项卡打开
 
@@ -102,3 +102,38 @@ type:radio/checkbox单选/多选
 <textarea name="请输入内容" ></textarea>
 
 <iframe src="statics/demosource/demo_iframe.html" width="200" height="50%frameborder="0"></iframe>
+<article> 标签定义独立的内容。
+
+<article> 标签定义的内容本身必须是有意义的且必须是独立于文档的其余部分。
+
+<article> 的潜在来源：
+
+论坛帖子
+博客文章
+新闻故事
+评论
+
+在 HTML5 中，<section> 标签定义了文档的某个区域。比如章节、头部、底部或者文档的其他区域。
+<aside> 标签定义 <article> 标签外的内容。
+
+aside 的内容应该与附近的内容相关。主要侧边栏内容
+
+<audio> 元素
+<audio> 标签定义声音，比如音乐或其他音频流。
+
+目前，<audio> 元素支持的3种文件格式：MP3、Wav、Ogg。
+
+如需在 HTML5 中播放音频，你需要使用以下代码：
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+您的浏览器不支持 audio 元素。
+</audio>
+control 属性供添加播放、暂停和音量控件。
+
+<audio> 元素允许使用多个 <source> 元素. <source> 元素可以链接不同的音频文件，浏览器将使用第一个支持的音频文件。
+可以在 <audio> 和 </audio> 之间放置文本内容，这些文本信息将会被显示在那些不支持 <audio> 标签的浏览器中。
+autoplay loop controls
+<audio controls autoplay>
+</audio>
