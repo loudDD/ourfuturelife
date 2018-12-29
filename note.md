@@ -80,3 +80,25 @@ target确认打开方式；"_blank"：新窗口或选项卡打开
 colspan：跨列
 rowspan:跨行
 <td colspan="2">Telephone:</td>
+
+<span/> 文本 内联原始
+<div></div>
+
+<form action="https://" method="get">
+    <input type="text" name="username" /></br>
+</form>搜索不同类型的用户输入
+表单中没有自动换行，需要<br />
+action:当提交表单时，向何处发送表单数据
+methon:当提交表单时，使用的http方法：get/post/dialog
+name: 指定表单的名称
+接受用户输入，需要相应的表单元素，如text.输入类型由类型属性（type)定义
+常用的text,password,radio,checkbox,submit
+
+type:radio/checkbox单选/多选
+
+提交表单
+<input type="submit" value="Submit />
+多行输入标签
+<textarea name="请输入内容" ></textarea>
+
+<iframe src="statics/demosource/demo_iframe.html" width="200" height="50%frameborder="0"></iframe>
