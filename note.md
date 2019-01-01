@@ -135,5 +135,66 @@ control 属性供添加播放、暂停和音量控件。
 <audio> 元素允许使用多个 <source> 元素. <source> 元素可以链接不同的音频文件，浏览器将使用第一个支持的音频文件。
 可以在 <audio> 和 </audio> 之间放置文本内容，这些文本信息将会被显示在那些不支持 <audio> 标签的浏览器中。
 autoplay loop controls
-<audio controls autoplay>
+<audio controls autoplay loop>
 </audio>
+<video width height controls>
+    <source src=>
+</video>
+video标签也可添加多个source，浏览器依次识别，知道可以识别格式，或显示video标签中文字
+支持四种格式 mp4 webm ogg
+controls autoplay loop
+
+<progress> 标签定义运行中的任务进度（进程）。
+<progress> 属性
+max：规定需要完成的值。
+value：规定进程的当前值。
+Web 存储对象有两种类型：
+localStorage 
+sessionStorage 
+localStorage 与 sessionStorage 的区别
+localStorage 对象存储的数据没有时间限制。
+sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。
+
+Web 存储使用的 API
+不管是 localStorage，还是 sessionStorage，可使用的API都相同，常用的有如下几个（以localStorage为例）：
+保存数据：localStorage.setItem(key,value);
+读取数据：localStorage.getItem(key);
+删除单个数据：localStorage.removeItem(key);
+清除所有数据：localStorage.clear();
+得到某个索引的key：localStorage.key(index);
+<form autocomplete="off"> autocomplete 属性规定 form 或 input 域应该拥有自动完成功能。
+当用户在自动完成域中开始输入时，浏览器应该在该域中显示填写的选项
+<input placehoder=”默认显示" autofocus required>页面加载自动聚焦；必填
+<input type="search">创建搜索框
+    <datalist id="weeks">datalist创建候选选项，默认autocomplete打开
+    <option value="MON>
+    <option value="TUE”>
+    </datalist>
+
+有条件（三元）运算符
+
+另一个JavaScript条件运算符根据一些条件为变量赋值。 句法：
+variable = (condition) ? value1: value2 
+例子:
+var isAdult = (age < 18) ? "未成年人": "成年人";
+
+循环可以将代码块执行指定的次数。
+如果您希望一遍又一遍地运行相同的代码，并且每次的值都不同，那么使用循环是很方便的。
+语法:
+for (statement 1; statement 2; statement 3) {
+   code block to be executed
+}
+语句 1（Statement 1）：在循环（代码块）开始之前执行。
+语句 2 （Statement 2）：定义运行循环的条件（代码块）。
+语句 3 （Statement 3）：在执行循环（代码块）之后每次执行。
+
+alert警告框（确认键）
+prompt提示（输入值，确认，取消）
+confirm(确认 返回true;取消 返回false)
+
+object.toUpperCase()全大写
+object.toLowerCase()全小写
+
+function name(age,class){
+    this.age = age 相当于self，但不用__init__函数声明
+}

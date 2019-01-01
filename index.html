@@ -5,6 +5,7 @@
         <title>练习</title>
     </head>
     <body>
+        <a href="drag.html">drag页</a>
         <h1>1级 标题</h1>
         <h2><span>关于我</span></h2>
         <p>
@@ -124,7 +125,60 @@
             <audio controls autoplay loop>
                 <source src="horse.ogg" type="audio/ogg">
                 <source src="horse.mp3" type="audio/mp3">
+                    不支持的文件格式
             </audio>
+            <video width="400" height="400" controls autoplay loop>
+                <source src="horse.mp4" type="video/mp4">
+                <source src="horse.webm" type="video/webm">
+                <source src="hoese.ogg" type="video/ogg">
+                    不支持的文件格式
+            </video>
+            <progress value="40" max="100">
+            </progress>
+        </div>
+        <script>var x=document.getElementById("demo"):
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition):
+            }
+            else{
+                x.innerHTML="该浏览器不支持获取地理位置。"
+            }
+        }
+        function showPosition(position){
+            x.innerHTML="维度: " + position.coords.latitude +
+            "<br>经度" + position.coords.longitude;
+        }</script>
+        <div>
+            <svg width="1000" height="1000">
+                <circle cx=100" cy="50" r="40" fill="red" />
+                <rect width="100" heigh="200" x="150" y="150" r="50" fill='green'></rect>
+            </svg>
+            <svg width="1000" height="250">
+                <rect width="150" height="150" fill="orange">
+                  <animate attributeName="x" from="0" to="300"
+                            dur="3s" fill="freeze" repeatCount="2"/> 
+                </rect>
+            </svg>
+            <svg width="500" height="500">
+                    <path d="M150 0 L75 200 L225 200 Z" />
+            </svg>
+            <canvas id="mycanvas" width="200" height="100">
+
+            </canvas>
+            <div>
+                姓名：<input type="text" name="fnane" placeholder="默认提示">
+                年龄：<input type="text" name="lname" placeholder="默认提示年龄相关信息" autofocus> 
+                <input type="submit">
+                <input list="browsers"/>
+                    <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+</datalist>
+            </div>
         </div>
     </body>
 </html>

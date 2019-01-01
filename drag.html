@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 学习drag and drop</title>
+<style type="text/css">
+        #div1 {width:350px;heigh:70px;padding:10px;border:1px #aaaa}
+
+</style>
+<script>
+    function alloeDrop(ev){
+        ev.preventDefault();
+
+    }
+    function drop(ev){
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text")
+        ev.target.appendChild(document.getElementById(data))
+    }
+</script>
+</head>
+<body>
+    <p>拖动w3cschoold.cn图片到矩形框中</p>
+    <div id="div1" ondrop="drop(event" ondragover="alloeDrop(event"></div>
+    <br>
+    <img id="drag1" src="/statics/images/log.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    <img draggable="true"
+</body>
+</html>
