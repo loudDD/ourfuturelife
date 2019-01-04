@@ -198,3 +198,5 @@ object.toLowerCase()全小写
 function name(age,class){
     this.age = age 相当于self，但不用__init__函数声明
 }
+
+提示: 所有CSS属性都可以使用JavaScript进行设置和修改。请记住，您不能在属性名称中使用破折号（ - ）：这些替换为驼峰写法，其中复合词以大写字母开头 比如: background-color属性应该被写为 backgroundColor。
