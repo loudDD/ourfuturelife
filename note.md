@@ -200,8 +200,6 @@ function name(age,class){
 }
 
 
-
-
 jquery 设置属性 $(selector).action()
 html返回带标签的所有内容
 text只返回内容
@@ -215,3 +213,5 @@ append()在所选元素的末尾插入内容。
 prepend()在所选元素的开头插入内容。
 after()插入所选元素后的内容。
 before()在所选元素之前插入内容。
+
+提示: 所有CSS属性都可以使用JavaScript进行设置和修改。请记住，您不能在属性名称中使用破折号（ - ）：这些替换为驼峰写法，其中复合词以大写字母开头 比如: background-color属性应该被写为 backgroundColor。

@@ -33,6 +33,24 @@
 //     alert("退出成功")
 // };
 
-var x = {age:10,name:"tom"}
-console.log(x.age)
-x.to
+// var x = {age:10,name:"tom"}
+// console.log(x.age)
+// x.to
+
+// function person(name,age){
+//     this.name = name;
+//     this.age = age;
+//     this.yearOfBirth = bornyear;
+// }
+// function bornyear(){
+//     return new Date().getFullYear() - this.age
+// }
+
+// console.log(person("tom",13))
+
+var a = ["afe", "we"]
+console.log(typeof(a))
+console.log(a)
+console.log(Object.prototype.toString.call(a))
+
+var a = prompt

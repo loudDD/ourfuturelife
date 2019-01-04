@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        /*
+        font-family名称为多个字符，需要用双引号括起；添加多个选择，以防浏览器等不支持，会以此尝试
+        font-size em = px / 16 单位为small,medium,large,xlarge,或以px/em为单位
+        */
+        <style>
+        p.serif {
+            font-family: "Times New Roman", Times, serif;
+         }
+         p.sansserif {
+            font-family: Helvetica, Arial, sans-serif;
+         }
+         p.monospace {
+            font-family: "Courier New", Courier, monospace;
+         }
+         p.cursive {
+            font-family: Florence, cursive;
+         }
+         p.fantasy {
+            font-family: Blippo, fantasy;
+         }
+        </style>
+    </head>
+    <body>
+            <p class="small">
+                Paragraph text set to be small
+            </p>
+            <p class="medium">
+                Paragraph text set to be medium
+            </p>
+            <p class="large">
+                Paragraph text set to be large
+            </p>
+            <p class="xlarge">
+                Paragraph text set to be very large
+            </p>
+        <p class="serif">
+            This is a paragraph shown in serif font.
+         </p>
+         <p class="sansserif">
+            This is a paragraph shown in sans-serif font.
+         </p> 
+         <p class="monospace">
+            This is a paragraph shown in monospace font.
+         </p> 
+         <p class="cursive">
+            This is a paragraph shown in cursive font.
+         </p> 
+         <p class="fantasy">
+            This is a paragraph shown in fantasy font.
+         </p> 
+    </body>
+</html>

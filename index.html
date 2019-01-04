@@ -5,6 +5,39 @@
         <title>练习</title>
     </head>
     <body>
+        <style>
+            #container {
+                width: 400px;
+                height: 400px;
+                background: green;
+                position: relative;
+            }
+            #box {
+                width: 30px;
+                height: 30px;
+                background: red;
+                position: absolute;
+            }
+                </style>
+                <div id="container">
+                    <div id="box"> </div>
+                </div>
+                <script>
+                    var pos = 0; 
+// 盒子元素
+                var box = document.getElementById("box");
+                var t = setInterval(move, 10);
+
+                function move() {
+                if(pos >= 370) {
+                    clearInterval(t);
+                }
+                else {
+                    pos += 1;
+                    box.style.left = pos+"px";
+                }
+                }
+                </script>
         <a href="drag.html">drag页</a>
         <h1>1级 标题</h1>
         <h2><span>关于我</span></h2>
@@ -179,6 +212,9 @@
                     <option value="Safari">
 </datalist>
             </div>
+        </div>
+        <div>
+            <a href="cssdemo.html"><em>css联系</em></a>
         </div>
     </body>
 </html>
