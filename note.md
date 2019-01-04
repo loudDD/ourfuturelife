@@ -198,3 +198,20 @@ object.toLowerCase()全小写
 function name(age,class){
     this.age = age 相当于self，但不用__init__函数声明
 }
+
+
+
+
+jquery 设置属性 $(selector).action()
+html返回带标签的所有内容
+text只返回内容
+attr(旧值，新值)
+removeattr删除
+val获取值  <div type="" value="">
+
+正如我们在以前的课程中所看到的，html()和text()方法可以用于获取和设置所选元素的内容。 然而，当这些方法用于设置内容时，现有内容将丢失。
+jQuery具有用于将新内容添加到所选元素而不删除现有内容的方法：
+append()在所选元素的末尾插入内容。
+prepend()在所选元素的开头插入内容。
+after()插入所选元素后的内容。
+before()在所选元素之前插入内容。
