@@ -9,8 +9,24 @@
                     var val = $("input").val();
                     if(val !== " "){
                         var elem = $("<li></li>").text(val);
-                        $(elem).append("<button class='rem' >)
+                        $(elem).append("<button class='rem'>X<button>");
+                        $("#mylist").append(elem);
+                        $("input").val("");//clear the input
                     }
+                });
+            });
+            $(function(){
+                $("#add").on("click",function(){
+                    var val = $("input").val();
+                    if(val !== ""){
+                        var elem = $("input").val();
+                        $(elem).append("<button calss='rem'>X</button>")
+                        $("#mylist").appen(elem);
+                        $("input").val("");
+                        $(".rem").on("click",function(){
+                            $(this).parent().remove();
+                        });
+                    };
                 });
             });
         </script>
