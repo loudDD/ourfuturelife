@@ -3,9 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>练习</title>
-    </head>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="a1.js"></script>
+        <script>
+            $(function(){
+                $(".all").find("div").eq(0).css("background-color","red");
+                $(".all").find("div").eq(1).css("width","40%");
+                $(".all").find("div").eq(2).css("background-color","#ccc");
+                /*sa();*/
+            })
+        </script>
+        <script>
+            $("div").addClass("class12") /*多个类名以空格分开*/
+            $("div").removeClass("")
+        </script>
+        
+    </head> 
     <body>
+        <div>
+            <button type="button" onclick="window.location.href='todolist.html'">跳转todolist</button>
+        </div>
+        <div class="all">
+            <div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
         <style>
+            .all>div{
+                width: 30%;
+                height: 300px;
+                float: left;
+                background-color: aqua;
+            }
             #container {
                 width: 400px;
                 height: 400px;
@@ -169,10 +199,10 @@
             <progress value="40" max="100">
             </progress>
         </div>
-        <script>var x=document.getElementById("demo"):
+        <script>var x=document.getElementById("demo");
         function getLocation(){
             if (navigator.geolocation){
-                navigator.geolocation.getCurrentPosition(showPosition):
+                navigator.geolocation.getCurrentPosition(showPosition);
             }
             else{
                 x.innerHTML="该浏览器不支持获取地理位置。"
