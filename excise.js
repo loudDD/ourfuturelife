@@ -48,9 +48,24 @@
 
 // console.log(person("tom",13))
 
-var a = ["afe", "we"]
-console.log(typeof(a))
-console.log(a)
-console.log(Object.prototype.toString.call(a))
+// var a = ["afe", "we"]
+// console.log(typeof(a))
+// console.log(a)
+// console.log(Object.prototype.toString.call(a))
 
-var a = prompt
+// var a = prompt
+
+var funModule = (function(){
+    return {
+        isCuteMixin: function(obj){
+            obj.isCute = function(){
+                return true;
+        };
+    },
+    singMixin: function(obj){
+        obj.sing = function(){
+            console.log("Singing to an awesome tune");
+            };
+        }
+    }
+})();
